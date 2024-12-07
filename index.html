@@ -13,13 +13,19 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            /* overflow-x: hidden;/ */
+            /* overflow: hidden; */
+            /* white-space: normal; */
+            /* overflow-x: hidden; */
+         
+  /* max-width: 100%; */
+  /* margin: 0 auto;  */
         }
 
         body {
-            width: 100vw;
-            height: 100vh;
+            width: 100%;
+    
         }
-
         nav {
             width: 100%;
             background: rgb(255, 255, 255);
@@ -36,11 +42,11 @@
             height: 80px
         }
 
-        .logo{
+        .logo {
             cursor: pointer;
             font-size: clamp(20px, 5vw, 35px);
             margin-left: 20px;
-  
+
         }
 
         .logo a {
@@ -74,82 +80,97 @@
             background: rgba(0, 128, 0, 0.877);
             color: aliceblue;
         }
-  .i2:hover{
-   
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  i:hover{
-    transform: rotate(88deg);
-    transition: transform 0.3s ease-in-out;
 
-  }
-  .logo:hover{
-opacity: 0.6;
+        .i2:hover {
 
-  }
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
 
-  /* container design */
-  .headind{
-    /* font-size: 38px */
-    font-size: clamp(26px,4vw,40px);
-    font-weight: 400;
-  }
-  .container{
-    padding: 0 16px;
- 
-  }
-  .heading-2{
+        i:hover {
+            transform: rotate(88deg);
+            transition: transform 0.3s ease-in-out;
 
-    font-size: clamp(18px,2.5vw,26px);
-    padding: 24px 0;
-  }
-  /* child-container-1 */
-.child-container-1{
- display: flex;
- flex-wrap: wrap;
-justify-content: space-between;
- padding: 0 16px;
- width: 100%;
- height: auto;
-  }
+        }
 
-.child-card{
-    width: 23%;
-    height: auto;
-    border-radius: 4px;
-  border-bottom: 1px solid #e9e9e9;
-  border-left: 1px solid #e9e9e9;
-  border-right: 1px solid #e9e9e9;
-   background: #FAFAFA;
- }
- .child-card:hover{
-     box-shadow: 2px 2px 3px;
-     /* transform: translateY(-5px); */
-     transition: transform 0.2s ease, box-shadow 0.2s ease;
- }
-.child-card img{
-    width: 100%;
-    height: auto; 
-  border-radius: 4px 4px 0 0;   
+        .logo:hover {
+            opacity: 0.6;
 
-}
+        }
 
-.child-card p{
-    font-size: clamp(13px,2vw,18px);
-    text-align: center;
-    padding: 8px 0;
-    color: green;
-}
-.child-card h3{
-    margin: 0px 10px 8px 8px;
-    font-size: clamp(12px,2.2vw,20px);
-    font-weight: 600;
-    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-}
-.child-card h3:hover{
-    color: green;
-}
+        /* container design */
+        .headind {
+            /* font-size: 38px */
+            font-size: clamp(26px, 4vw, 40px);
+            font-weight: 400;
+        }
+
+        .container {
+            padding: 0 16px;
+
+        }
+
+        .heading-2 {
+
+            font-size: clamp(18px, 2.5vw, 26px);
+            padding: 24px 0;
+        }
+
+        /* child-container-1 */
+        .child-container-1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 16px;
+            /* margin: 0 16px; */
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+
+  
+        }
+
+        .child-card {
+            width: 23%;
+            height: auto;
+            border-radius: 4px;
+            border-bottom: 1px solid #e9e9e9;
+            border-left: 1px solid #e9e9e9;
+            border-right: 1px solid #e9e9e9;
+            background: #FAFAFA;
+        }
+
+        .child-card:hover {
+            box-shadow: 2px 2px 3px;
+            /* transform: translateY(-5px); */
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .child-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px 4px 0 0;
+
+        }
+
+        .child-card p {
+            font-size: clamp(13px, 2vw, 18px);
+            text-align: center;
+            padding: 8px 0;
+            color: green;
+        }
+
+        .child-card h3 {
+            margin: 0px 10px 8px 8px;
+            font-size: clamp(12px, 2.2vw, 20px);
+            font-weight: 600;
+            font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        }
+
+        .child-card h3:hover {
+            color: green;
+        }
+
         /* छोटे स्क्रीन के लिए मीडिया क्वेरी */
         /* @media (max-width: 460px) {
     nav {
@@ -191,34 +212,85 @@ justify-content: space-between;
         </div>
     </nav>
     <!-- container -->
-     <div class="container">
+    <div class="container">
         <h2 class="headind">Reader Favorites</h2>
         <p class="heading-2">Our favorites and our readers’ favorites!</p>
     </div>
-  <div class="child-container-1">
-<div class="child-card">
-    <img src="images/ourfavorites/1.webp" alt="">
-    <p>Paneer Recipes</p>
-    <h3>Paneer Butter Masala Recipe (Restaurant Style)</h3>
-</div>
-<div class="child-card">
-    <img src="images/ourfavorites/2.webp" alt="">
-    <p>Dal (Lentils) & Legumes</p>
-    <h3>Dal Makhani Recipe (Authentic Punjabi Style)</h3>
-</div>
-<div class="child-card">
-    <img src="images/ourfavorites/3.webp" alt="">
-    <p>Paneer Recipes</p>
-    <h3>Malai Kofta Recipe (Restaurant Style Paneer Kofta)</h3>
-</div>
-<div class="child-card">
-    <img src="images/ourfavorites/4.webp" alt="">
-    <p>Breakfast Recipes</p>
-    <h3>Idli Recipe (With Homemade Idli Batter)</h3>
-</div>
 
-  </div>
+    <!-- child-container-1 -->
+    <div class="child-container-1">
+        <div class="child-card">
+            <img src="images/ourfavorites/1.webp" alt="">
+            <p>Paneer Recipes</p>
+            <h3>Paneer Butter Masala Recipe (Restaurant Style)</h3>
+        </div>
+        <div class="child-card">
+            <img src="images/ourfavorites/2.webp" alt="">
+            <p>Dal (Lentils) & Legumes</p>
+            <h3>Dal Makhani Recipe (Authentic Punjabi Style)</h3>
+        </div>
+        <div class="child-card">
+            <img src="images/ourfavorites/3.webp" alt="">
+            <p>Paneer Recipes</p>
+            <h3>Malai Kofta Recipe (Restaurant Style Paneer Kofta)</h3>
+        </div>
+        <div class="child-card">
+            <img src="images/ourfavorites/4.webp" alt="">
+            <p>Breakfast Recipes</p>
+            <h3>Idli Recipe (With Homemade Idli Batter)</h3>
+        </div>
 
+    </div>
+    <!-- child-container-2 -->
+      <div class="child-container-1">
+        <div class="child-card">
+            <img src="images/ourfavorites/5.webp" alt="">
+            <p>Snacks Recipes</p>
+            <h3>Samosa Recipe | How to make Punjabi Samosa</h3>
+        </div>
+        <div class="child-card">
+            <img src="images/ourfavorites/6.webp" alt="">
+            <p>Paneer Recipes</p>
+            <h3>Palak Paneer Recipe (Spinach & Paneer Cheese Curry)</h3>
+        </div>
+        <div class="child-card">
+            <img src="images/ourfavorites/7.webp" alt="">
+            <p>Indian Street Food Recipes</p>
+            <h3>Pav Bhaji Recipe | How to make Mumbai Pav Bhaji</h3>
+        </div>
+        <div class="child-card">
+            <img src="images/ourfavorites/8.webp" alt="">
+            <p>Dal (Lentils) & Legumes</p>
+            <h3>Dal Tadka Recipe (Stovetop & Instant Pot)</h3>
+        </div>
+
+    </div>
+
+    <!-- child-container-3 -->
+
+    <div class="child-container-1">
+        <div class="child-card">
+            <img src="images/ourfavorites/9.webp" alt="">
+            <p>Paneer Recipes</p>
+            <h3>Matar Paneer Recipe | Punjabi Mutter Paneer</h3>
+        </div>
+        <div class="child-card">
+            <img src="images/ourfavorites/10.webp" alt="">
+            <p>Chickpea Recipes</p>
+            <h3>Chole Recipe | Street Style Punjabi Chole Masala</h3>
+        </div>
+        <div class="child-card">
+            <img src="images/ourfavorites/11.webp" alt="">
+            <p>Indian Street Food Recipes</p>
+            <h3>Pani Puri</h3>
+        </div>
+        <div class="child-card">
+            <img src="images/ourfavorites/12.jpg" alt="">
+            <p>Paneer Recipes</p>
+            <h3>Paneer Bhurji Recipe (Punjabi Style)</h3>
+        </div>
+
+    </div> 
     <script></script>
 </body>
 
