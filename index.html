@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        nav {
+            width: 100%;
+            background: rgb(255, 255, 255);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: green;
+            font-size: clamp(20px, 2.3vw, 32px);
+            padding: 4px 1px;
+
+            /* margin: 15px 0; */
+            border-bottom: 1px solid #dee7d7c9;
+            position: relative;
+            height: 80px
+        }
+
+        .logo{
+            cursor: pointer;
+            font-size: clamp(20px, 5vw, 35px);
+            margin-left: 20px;
+  
+        }
+
+        .logo a {
+            color: green;
+        }
+
+        .nav-links a {
+            color: green;
+            margin: 0 10px;
+            text-decoration: none;
+            padding: 2px 6px;
+            margin: 0 4px;
+            border-radius: 3px;
+        }
+
+        .icons {
+            margin: 0 8px;
+            cursor: pointer;
+        }
+
+        .i {
+            font-size: clamp(16px, 2.1vw, 32px);
+            margin-right: 25px;
+        }
+
+        .i2 {
+            font-size: clamp(16px, 2vw, 32px);
+        }
+
+        .nav-links a:hover {
+            background: rgba(0, 128, 0, 0.877);
+            color: aliceblue;
+        }
+  .i2:hover{
+   
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  i:hover{
+    transform: rotate(88deg);
+    transition: transform 0.3s ease-in-out;
+
+  }
+  .logo:hover{
+opacity: 0.6;
+
+  }
+
+  /* container design */
+  .headind{
+    /* font-size: 38px */
+    font-size: clamp(26px,4vw,40px);
+    font-weight: 400;
+  }
+  .container{
+    padding: 0 16px;
+ 
+  }
+  .heading-2{
+
+    font-size: clamp(18px,2.5vw,26px);
+    padding: 24px 0;
+  }
+  /* child-container-1 */
+.child-container-1{
+ display: flex;
+ flex-wrap: wrap;
+justify-content: space-between;
+ padding: 0 16px;
+ width: 100%;
+ height: auto;
+  }
+
+.child-card{
+    width: 23%;
+    height: auto;
+    border-radius: 4px;
+  border-bottom: 1px solid #e9e9e9;
+  border-left: 1px solid #e9e9e9;
+  border-right: 1px solid #e9e9e9;
+   background: #FAFAFA;
+ }
+ .child-card:hover{
+     box-shadow: 2px 2px 3px;
+     /* transform: translateY(-5px); */
+     transition: transform 0.2s ease, box-shadow 0.2s ease;
+ }
+.child-card img{
+    width: 100%;
+    height: auto; 
+  border-radius: 4px 4px 0 0;   
+
+}
+
+.child-card p{
+    font-size: clamp(13px,2vw,18px);
+    text-align: center;
+    padding: 8px 0;
+    color: green;
+}
+.child-card h3{
+    margin: 0px 10px 8px 8px;
+    font-size: clamp(12px,2.2vw,20px);
+    font-weight: 600;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.child-card h3:hover{
+    color: green;
+}
+        /* छोटे स्क्रीन के लिए मीडिया क्वेरी */
+        /* @media (max-width: 460px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        margin: 5px 0;
+    }
+} */
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#">Flopi</a>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+
+            <!-- <i class="fa-solid fa-user"></i>
+            <i class="fas fa-shopping-cart fa-user"></i> -->
+            <i class="fa-solid fa-magnifying-glass  icons i2"></i>
+
+            <!-- <p>SIGN IN</p> -->
+            <i Class="fa-solid fa-right-to-bracket icons i"></i>
+        </div>
+    </nav>
+    <!-- container -->
+     <div class="container">
+        <h2 class="headind">Reader Favorites</h2>
+        <p class="heading-2">Our favorites and our readers’ favorites!</p>
+    </div>
+  <div class="child-container-1">
+<div class="child-card">
+    <img src="images/ourfavorites/1.webp" alt="">
+    <p>Paneer Recipes</p>
+    <h3>Paneer Butter Masala Recipe (Restaurant Style)</h3>
+</div>
+<div class="child-card">
+    <img src="images/ourfavorites/2.webp" alt="">
+    <p>Dal (Lentils) & Legumes</p>
+    <h3>Dal Makhani Recipe (Authentic Punjabi Style)</h3>
+</div>
+<div class="child-card">
+    <img src="images/ourfavorites/3.webp" alt="">
+    <p>Paneer Recipes</p>
+    <h3>Malai Kofta Recipe (Restaurant Style Paneer Kofta)</h3>
+</div>
+<div class="child-card">
+    <img src="images/ourfavorites/4.webp" alt="">
+    <p>Breakfast Recipes</p>
+    <h3>Idli Recipe (With Homemade Idli Batter)</h3>
+</div>
+
+  </div>
+
+    <script></script>
+</body>
+
+</html>
