@@ -183,7 +183,7 @@
             color: green;
             cursor: pointer;
         }
-
+/* section-2 */
         /* CookBook */
         .cookbook {
             display: flex;
@@ -223,11 +223,7 @@ text-align: center;
             width: clamp(150px,2vw,220px);
             transition: transform 0.6s;
             transform-style: preserve-3d;
-            /* transition: transform 0.5s ease-in-out;
-            transform-style: preserve-3d;  */
-            /* perspective: 1000px;
-            transition: transform 0.3s ease-in-out; */
-            /* transition: transform 0.5s;  perspective: 1500px; */
+         
 
         }
 .cookbook img:hover{
@@ -235,10 +231,119 @@ text-align: center;
  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
  transform: rotateY(180deg);
 
- /* transform: rotateX(10deg) rotateY(10deg) scale(1.1); */
- /* transform: rotateY(15deg);  */
- /* transform: rotateX(25deg) rotateY(25deg); */
 }         
+
+/* section-4 */
+.signup h3{
+  font-weight: 900;
+
+    font-size: clamp(23px,4vw,38px);
+}
+.sec-4{
+  text-align: center;
+  margin: 50px auto;
+  background: #519D22;
+  margin: 30px 16px;
+  border-radius: 5px;
+  color: white;
+}
+.signup{
+    padding: 20px 0;
+}
+
+.signup p{
+    padding: 20px 0;
+    font-weight: 400;
+
+    font-size: clamp(14px,4vw,24px);
+}
+.signup input{
+    /* width: 180px; */
+    width: clamp(150px, 30%, 280px); 
+    /* padding: 12px 10px; */
+    padding: clamp(7px, 2vw, 10px) clamp(10px, 3vw, 20px);
+
+   margin: 0 10px;
+   border: 1px solid black;
+   border-radius: 3px;
+font-weight: 400;
+   font-size: clamp(12px,2.5vw,18px);
+}
+
+.signup button{
+margin-top: 30px;
+  line-height: 30px;
+  width: clamp(60px,15vw,190px);
+  font-size: 18px;
+  font-weight: 400;
+}
+.explor{
+   height: 350px;
+   padding: 0 16px;
+}
+.explor h2{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0  20px 0;
+}
+.explor-recipes{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.explor-recipes .card{
+    margin: 0 10px;
+}
+.card{
+    
+    min-width: 14.6%;
+    border-radius: 5%;
+  cursor: pointer;
+}
+.card img{
+    height: auto; 
+    width: 100%;
+}
+.card img:hover{
+ 
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.card img:hover + .text{
+    color: crimson;
+}
+
+.card p{
+    text-align: center;
+    padding: 5px;
+    font-size: 2vw;
+}
+.card p:hover{
+    color: #519D22;
+}
+/* Scrollbar की width और height सेट करें */
+::-webkit-scrollbar {
+  width: 8px; /* Vertical scrollbar की चौड़ाई */
+  height: 8px; /* Horizontal scrollbar की ऊंचाई */
+}
+
+/* Scrollbar का track (background) */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Track का color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Scrollbar की thumb (handle) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Thumb का color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Scrollbar hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Hover पर thumb का color */
+}
+
 
         /* छोटे स्क्रीन के लिए मीडिया क्वेरी */
         /* @media (max-width: 460px) {
@@ -432,12 +537,65 @@ text-align: center;
             <p>Soup Recipes</p>
             <h3>Vegetable Soup (Easy & Healthy)</h3>
         </div>
-
+    
     </div>
 
+    <!-- section-4 -->
+<div class="sec-4">
+    <div class="signup">
+        <h3> Get My Secrets to Great Indian Food</h3>
+        <p>Sign up for my FREE Beginners Guide to Delicious Indian Cooking</p>
+        <input type="name" id="name"  placeholder="Enter Your Name">
+        <input type="email" id="email"  placeholder="Enter Your Email"> <br>
+        <button type="submit" >SIGNUP</button>
+     </div>
+
+</div>
+
+<!-- section-5 -->
+<div class="explor">
+    <h2>Explore Recipes</h2>
+    <div class="explor-recipes">
+        <div class="card">
+            <img src="images/ourfavorites/section-5/1.webp" alt="" class="bor">
+            <p class="text">Punjabi Food</p>
+        </div>
+        <div class="card">
+            <img src="images/ourfavorites/section-5/2.webp" alt="" class="bor">
+            <p class="text">Indian Breads</p>
+        </div>
+        <div class="card">
+            <img src="images/ourfavorites/section-5/3.webp" alt="" class="bor">
+            <p class="text">Sweets Recipes</p>
+        </div>
+        <div class="card">
+            <img src="images/ourfavorites/section-5/4.webp" alt="" class="bor">
+            <p class="text">Chutney Recipes</p>
+        </div>
+        <div class="card">
+            <img src="images/ourfavorites/section-5/5.webp" alt="" class="bor">
+            <p class="text">South Indian Food Recipes</p>
+        </div>
+        <div class="card">
+            <img src="images/ourfavorites/section-5/7.webp" alt="" class="bor">
+            <p class="text">Punjabi Food</p>
+        </div>
+
+        <div class="card">
+            <img src="images/ourfavorites/section-5/7.webp" alt="" class="bor">
+            <p class="text">Punjabi Food</p>
+        </div>
 
 
+        <div class="card">
+            <img src="images/ourfavorites/section-5/7.webp" alt="" class="bor">
+            <p class="text">Punjabi Food</p>
+        </div>
+    
+    </div>
+</div>
     <script></script>
 </body>
 
 </html>
+
