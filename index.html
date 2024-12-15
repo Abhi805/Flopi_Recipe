@@ -114,7 +114,7 @@
         .heading-2 {
 
             font-size: clamp(18px, 2.5vw, 26px);
-            padding: 24px 0;
+            padding: 19px 0;
         }
 
         /* child-container-1 */
@@ -139,30 +139,32 @@
             border-left: 1px solid #e9e9e9;
             border-right: 1px solid #e9e9e9;
             background: #FAFAFA;
-            transition: transform 0.3s ease; /* Smooth effect */
+            transition: transform 0.3s ease;
+            /* Smooth effect */
             overflow: hidden;
-      
-           
+
+
         }
 
         .child-card:hover {
-       
+
             box-shadow: 2px 2px 10px gray, -2px -2px 10px gray;
-    
-          
-         }
-         .sec-3-child .child-card:hover{
+
+
+        }
+
+        .sec-3-child .child-card:hover {
             border-bottom: 3px solid #FEC445;
             border-right: 3px solid #FEC445;
-          box-shadow: 2px 2px 5px #FEC445;
-          border-bottom-right-radius: 4px;
-         }
+            box-shadow: 2px 2px 5px #FEC445;
+            border-bottom-right-radius: 4px;
+        }
 
         .child-card img {
             width: 100%;
             height: auto;
             border-radius: 4px 4px 0 0;
-        
+
         }
 
         .child-card p {
@@ -183,167 +185,293 @@
             color: green;
             cursor: pointer;
         }
-/* section-2 */
+
+        /* section-2 */
         /* CookBook */
         .cookbook {
             display: flex;
             max-width: 100%;
             text-align: center;
             align-items: center;
-          justify-content: space-around;      
-          margin: 25px 16px; 
-          background:#519D22;
-      padding: 0 50px;
+            justify-content: space-around;
+            margin: 25px 16px;
+            background: #519D22;
+            padding: 0 50px;
 
-        border-radius: 8px 8px 8px 8px;
-         }
-.cookbook p{
-    font-size: clamp(18px,5vw,40px);
-    font-weight: 900;
-    
+            border-radius: 8px 8px 8px 8px;
+        }
 
-color: white;
-text-align: center;
-}
+        .cookbook p {
+            font-size: clamp(18px, 5vw, 40px);
+            font-weight: 900;
 
-.heading-3 a{
-    font-size: clamp(18px,2.5vw,30px);
-    font-weight: 400;
-  color: white;
- padding: 0 5px;
-}
-.heading-3 a:hover{
-    color: green;
-    background: white;
-    border-bottom: 8px;
-}
-.cookbook img {
+
+            color: white;
+            text-align: center;
+        }
+
+        .heading-3 a {
+            font-size: clamp(18px, 2.5vw, 30px);
+            font-weight: 400;
+            color: white;
+            padding: 0 5px;
+        }
+
+        .heading-3 a:hover {
+            color: green;
+            background: white;
+            border-bottom: 8px;
+        }
+
+        .cookbook img {
             object-fit: contain;
-         
-            width: clamp(150px,2vw,220px);
+
+            width: clamp(150px, 2vw, 220px);
             transition: transform 0.6s;
             transform-style: preserve-3d;
-         
+
 
         }
-.cookbook img:hover{
- opacity: 0.8;
- box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
- transform: rotateY(180deg);
 
-}         
+        .cookbook img:hover {
+            opacity: 0.8;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            /* Shadow effect */
+            transform: rotateY(180deg);
 
-/* section-4 */
-.signup h3{
-  font-weight: 900;
+        }
 
-    font-size: clamp(23px,4vw,38px);
-}
-.sec-4{
-  text-align: center;
-  margin: 50px auto;
-  background: #519D22;
-  margin: 30px 16px;
-  border-radius: 5px;
-  color: white;
-}
-.signup{
-    padding: 20px 0;
-}
+        /* section-4 */
+        .signup h3 {
+            font-weight: 900;
 
-.signup p{
-    padding: 20px 0;
+            font-size: clamp(23px, 4vw, 38px);
+        }
+
+        .sec-4 {
+            text-align: center;
+            margin: 50px auto;
+            background: #519D22;
+            margin: 30px 16px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .signup {
+            padding: 20px 0;
+        }
+
+        .signup p {
+            padding: 20px 0;
+            font-weight: 400;
+
+            font-size: clamp(14px, 4vw, 24px);
+        }
+
+        .signup input {
+            /* width: 180px; */
+            width: clamp(150px, 30%, 280px);
+            /* padding: 12px 10px; */
+            padding: clamp(7px, 2vw, 10px) clamp(10px, 3vw, 20px);
+
+            margin: 0 10px;
+            border: 1px solid black;
+            border-radius: 3px;
+            font-weight: 400;
+            font-size: clamp(12px, 2.5vw, 18px);
+        }
+
+        .signup button {
+            margin-top: 30px;
+            line-height: 30px;
+            width: clamp(60px, 15vw, 190px);
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .explor {
+            height: 315px;
+            padding: 0 16px;
+        }
+
+        .explor h2 {
+            font-size: 30px;
+            font-weight: 600;
+            margin: 20px 0 20px 0;
+        }
+
+        .explor-recipes {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .explor-recipes .card {
+            margin: 0 10px;
+        }
+
+        .card {
+
+            min-width: 14.6%;
+            border-radius: 5%;
+            cursor: pointer;
+        }
+
+        .card img {
+            height: auto;
+            width: 100%;
+        }
+
+        .card img:hover {
+
+            border: 3px solid rgb(255, 255, 255);
+        }
+
+        .card img:hover+.text {
+            color: crimson;
+        }
+
+        .card p {
+            text-align: center;
+            padding: 5px;
+            font-size: 2vw;
+        }
+
+        .card p:hover {
+            color: #519D22;
+        }
+
+        /* Scrollbar की width और height सेट करें */
+        ::-webkit-scrollbar {
+            width: 8px;
+            /* Vertical scrollbar की चौड़ाई */
+            height: 8px;
+            /* Horizontal scrollbar की ऊंचाई */
+        }
+
+        /* Scrollbar का track (background) */
+        ::-webkit-scrollbar-track {
+            background: #f0f0f0;
+            /* Track का color */
+            border-radius: 10px;
+            /* Rounded corners */
+        }
+
+        /* Scrollbar की thumb (handle) */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            /* Thumb का color */
+            border-radius: 10px;
+            /* Rounded corners */
+        }
+
+        /* Scrollbar hover effect */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+            /* Hover पर thumb का color */
+        }
+
+
+        #name {
+            outline: none;
+        }
+
+        #email {
+            outline: none;
+        }
+ footer{
+   background: #424242;
+   margin: 0 16px;
+   color: white;
+   border-radius: 2px;
+height: 300px;
+margin-bottom: 20px;
+text-align: center;
+align-content: center;
+
+
+ }
+ .logoand p{
+    font-size: clamp(26px, 4vw, 40px);
+ }
+ .logoand h3{
+    font-size: clamp(26px, 3vw, 40px);
     font-weight: 400;
-
-    font-size: clamp(14px,4vw,24px);
-}
-.signup input{
-    /* width: 180px; */
-    width: clamp(150px, 30%, 280px); 
-    /* padding: 12px 10px; */
-    padding: clamp(7px, 2vw, 10px) clamp(10px, 3vw, 20px);
-
-   margin: 0 10px;
-   border: 1px solid black;
-   border-radius: 3px;
-font-weight: 400;
-   font-size: clamp(12px,2.5vw,18px);
-}
-
-.signup button{
-margin-top: 30px;
-  line-height: 30px;
-  width: clamp(60px,15vw,190px);
-  font-size: 18px;
-  font-weight: 400;
-}
-.explor{
-   height: 350px;
-   padding: 0 16px;
-}
-.explor h2{
-  font-size: 30px;
-  font-weight: 600;
-  margin: 20px 0  20px 0;
-}
-.explor-recipes{
+ }
+ .nav-footer ul li a{
+  font-size: 19px;
+  
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  font-weight: 700;
+ }
+ .nav-footer ul{
     display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-}
-.explor-recipes .card{
-    margin: 0 10px;
-}
-.card{
-    
-    min-width: 14.6%;
-    border-radius: 5%;
-  cursor: pointer;
-}
-.card img{
-    height: auto; 
-    width: 100%;
-}
-.card img:hover{
+  text-align:center;
+  justify-content: space-around;
+
+ padding: 20px 0;
+ }
+
+ .nav-footer-2 ul {
+    display: flex;
+    column-gap: 193px;
+    padding-left:88px ;
+  
+ }
+ .nav-footer-2 ul li{
+
+ }
+ .nav-footer-2 a{
+
+font-size: 19px;
+  
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  font-weight: 700;
+ }
+ .nav-footer ul {
+ flex-wrap: wrap;
  
-    border: 3px solid rgb(255, 255, 255);
+ }
+.nav-footer ul li{
+   
+    border-bottom: 1px  solid #616161;
+    padding-bottom: 5px;
 }
+.nav-footer-2 ul li{
+   
+   border-bottom: 1px  solid #616161;
+   padding-bottom: 5px;
+}
+.nav-footer ul li:hover, .nav-footer-2 ul li:hover{
+    border-bottom: 1px  solid white;
+}
+.social-media{
+    display: flex;
+    gap: 15px;
+  margin-top: 20px;
+ 
+    justify-content: center;
+   
+}    
+.social-media li img{
+    width: 40px;
+    height: 40px;
+  border-radius: 50px;
+    object-fit: cover; /* इमेज को क्रॉप करके कंटेनर में फिट करेगा */
+    transition: border-radius 0.3s ease-out;
+}
+.social-media .addimg{
 
-.card img:hover + .text{
-    color: crimson;
 }
-
-.card p{
-    text-align: center;
-    padding: 5px;
-    font-size: 2vw;
+.social-media li img:hover{
+    border-radius:2px;
+    opacity: 0.9;
 }
-.card p:hover{
-    color: #519D22;
-}
-/* Scrollbar की width और height सेट करें */
-::-webkit-scrollbar {
-  width: 8px; /* Vertical scrollbar की चौड़ाई */
-  height: 8px; /* Horizontal scrollbar की ऊंचाई */
-}
-
-/* Scrollbar का track (background) */
-::-webkit-scrollbar-track {
-  background: #f0f0f0; /* Track का color */
-  border-radius: 10px; /* Rounded corners */
-}
-
-/* Scrollbar की thumb (handle) */
-::-webkit-scrollbar-thumb {
-  background: #888; /* Thumb का color */
-  border-radius: 10px; /* Rounded corners */
-}
-
-/* Scrollbar hover effect */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Hover पर thumb का color */
-}
-
+/* last container */
 
         /* छोटे स्क्रीन के लिए मीडिया क्वेरी */
         /* @media (max-width: 460px) {
@@ -472,19 +600,20 @@ margin-top: 30px;
 
     <!-- CoockBook -->
     <div class="cookbook">
-<div class="linc">
-    <p>Get Dassana's New Cookbook</p>
-    <p class="heading-3"> <a href="https://www.vegrecipesofindia.com/dassana-cookbook/">Dassana Vegetarian Homecooking</a></p>
-</div>
+        <div class="linc">
+            <p>Get Dassana's New Cookbook</p>
+            <p class="heading-3"> <a href="https://www.vegrecipesofindia.com/dassana-cookbook/">Dassana Vegetarian
+                    Homecooking</a></p>
+        </div>
         <img src="images/ourfavorites/coockbook.webp" alt="">
-         
+
     </div>
 
 
     <!-- section-3 -->
 
-     <!-- container -->
-     <div class="container">
+    <!-- container -->
+    <div class="container">
         <h2 class="headind">Latest Posts</h2>
         <p class="heading-2">Get our recently published new posts.</p>
     </div>
@@ -515,8 +644,8 @@ margin-top: 30px;
     </div>
 
 
-     <!-- child-container-2 -->
-     <div class="child-container-1 sec-3-child">
+    <!-- child-container-2 -->
+    <div class="child-container-1 sec-3-child">
         <div class="child-card ">
             <img src="images/ourfavorites/section-2-img/5.jpg" alt="">
             <p>DIY & Collections</p>
@@ -537,65 +666,183 @@ margin-top: 30px;
             <p>Soup Recipes</p>
             <h3>Vegetable Soup (Easy & Healthy)</h3>
         </div>
-    
+
     </div>
 
     <!-- section-4 -->
-<div class="sec-4">
-    <div class="signup">
-        <h3> Get My Secrets to Great Indian Food</h3>
-        <p>Sign up for my FREE Beginners Guide to Delicious Indian Cooking</p>
-        <input type="name" id="name"  placeholder="Enter Your Name">
-        <input type="email" id="email"  placeholder="Enter Your Email"> <br>
-        <button type="submit" >SIGNUP</button>
-     </div>
+    <div class="sec-4">
+        <form action="welcome.html" method="post" onsubmit="return validation()">
+            <div class="signup">
+                <h3> Get My Secrets to Great Indian Food</h3>
+                <p>Sign up for my FREE Beginners Guide to Delicious Indian Cooking</p>
+                <input type="name" required id="name" placeholder="Enter Your Name">
+                <label id="lname"></label>
+                <input type="name" id="email" placeholder="Enter Your Email"> <br>
+                <label id="lemail"></label>
 
-</div>
+                <button type="submit">SIGNUP</button>
+            </div>
+        </form>
 
-<!-- section-5 -->
-<div class="explor">
-    <h2>Explore Recipes</h2>
-    <div class="explor-recipes">
-        <div class="card">
-            <img src="images/ourfavorites/section-5/1.webp" alt="" class="bor">
-            <p class="text">Punjabi Food</p>
-        </div>
-        <div class="card">
-            <img src="images/ourfavorites/section-5/2.webp" alt="" class="bor">
-            <p class="text">Indian Breads</p>
-        </div>
-        <div class="card">
-            <img src="images/ourfavorites/section-5/3.webp" alt="" class="bor">
-            <p class="text">Sweets Recipes</p>
-        </div>
-        <div class="card">
-            <img src="images/ourfavorites/section-5/4.webp" alt="" class="bor">
-            <p class="text">Chutney Recipes</p>
-        </div>
-        <div class="card">
-            <img src="images/ourfavorites/section-5/5.webp" alt="" class="bor">
-            <p class="text">South Indian Food Recipes</p>
-        </div>
-        <div class="card">
-            <img src="images/ourfavorites/section-5/7.webp" alt="" class="bor">
-            <p class="text">Punjabi Food</p>
-        </div>
-
-        <div class="card">
-            <img src="images/ourfavorites/section-5/7.webp" alt="" class="bor">
-            <p class="text">Punjabi Food</p>
-        </div>
-
-
-        <div class="card">
-            <img src="images/ourfavorites/section-5/7.webp" alt="" class="bor">
-            <p class="text">Punjabi Food</p>
-        </div>
-    
     </div>
+
+    <!-- section-5 -->
+    <div class="explor">
+        <h2>Explore Recipes</h2>
+        <div class="explor-recipes">
+            <div class="card">
+                <img src="images/ourfavorites/section-5/1.webp" alt="" class="bor">
+                <p class="text">Punjabi Food</p>
+            </div>
+            <div class="card">
+                <img src="images/ourfavorites/section-5/2.webp" alt="" class="bor">
+                <p class="text">Indian Breads</p>
+            </div>
+            <div class="card">
+                <img src="images/ourfavorites/section-5/3.webp" alt="" class="bor">
+                <p class="text">Sweets Recipes</p>
+            </div>
+            <div class="card">
+                <img src="images/ourfavorites/section-5/4.webp" alt="" class="bor">
+                <p class="text">Chutney Recipes</p>
+            </div>
+            <div class="card">
+                <img src="images/ourfavorites/section-5/5.webp" alt="" class="bor">
+                <p class="text">South Indian Food Recipes</p>
+            </div>
+            <div class="card">
+                <img src="images/ourfavorites/section-5/7.webp" alt="" class="bor">
+                <p class="text">Punjabi Food</p>
+            </div>
+
+            <div class="card">
+                <img src="images/ourfavorites/section-5/7.webp" alt="" class="bor">
+                <p class="text">Punjabi Food</p>
+            </div>
+
+
+            <div class="card">
+                <img src="images/ourfavorites/section-5/7.webp" alt="" class="bor">
+                <p class="text">Punjabi Food</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- last Section -->
+
+    <!-- container -->
+    <div class="container">
+        <h2 class="headind">Breakfast Recipes</h2>
+        <p class="heading-2">Find some popular Indian breakfast recipes that are both a comfort food and favored by many of us. </p>
+    </div>
+
+    <!-- child-container-1 -->
+    <div class="child-container-1 sec-3-child">
+        <div class="child-card">
+            <img src="images/ourfavorites/section-2-img/1.jpg"  alt="">
+            <p>Paneer Recipes</p>
+            <h3>Paneer Dosa Recipe (Street Style)</h3>
+        </div>
+        <div class="child-card">
+            <img src="images/ourfavorites/section-2-img/2.jpg" alt="">
+            <p>Tamil Nadu Food</p>
+            <h3>Cauliflower Poriyal (South Indian Cauliflower Stir Fry)</h3>
+        </div>
+        <div class="child-card">
+            <img src="images/ourfavorites/section-2-img/3.jpg" alt="">
+            <p>DIY & Collections</p>
+            <h3>25 Delicious Millet Recipes to Try Today</h3>
+        </div>
+        <div class="child-card">
+            <img src="images/ourfavorites/section-2-img/4.jpg" alt="">
+            <p>Cake Recipes</p>
+            <h3>Eggless Cupcake Recipe | Vanilla Cupcakes</h3>
+        </div>
+
+    </div>
+
+
+    <!-- child-container-2 -->
+    <div class="child-container-1 sec-3-child">
+        <div class="child-card ">
+            <img src="images/ourfavorites/section-2-img/5.jpg" alt="">
+            <p>DIY & Collections</p>
+            <h3>Sandwich Recipes | 26 Flavorful Vegetarian Sandwich Recipes</h3>
+        </div>
+        <div class="child-card">
+            <img src="images/ourfavorites/section-2-img/6.jpg" alt="">
+            <p>Breakfast Recipes</p>
+            <h3>Thatte Idli | Bangalore Special Plate Idli</h3>
+        </div>
+        <div class="child-card">
+            <img src="images/ourfavorites/section-2-img/7.webp" alt="">
+            <p>Soup Recipes</p>
+            <h3>Clear Soup (Healthy Clear Veg Soup)</h3>
+        </div>
+        <div class="child-card">
+            <img src="images/ourfavorites/section-2-img/8.jpg" alt="">
+            <p>Soup Recipes</p>
+            <h3>Vegetable Soup (Easy & Healthy)</h3>
+        </div>
+
+    </div>
+<footer>
+    <div class="logoand">
+        <p>Flopi</p>
+    <h3>Flopi Veg Recipes</h3>
 </div>
-    <script></script>
+<div class="nav-footer">
+    <ul>
+        <li><a href="#">Recipe Glossary</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Accessibility Statement</a></li>
+     
+
+    </ul>
+</div>
+<div class="nav-footer-2">
+    <ul>
+   
+        <li><a href="#">Press &amp; Media</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+     
+
+    </ul>
+</div>
+<div class="social-media">
+   <li><a href="#"><img  class="addimg" src="images/ourfavorites/social-media/Untitled.jpg" alt=""></a></li>
+   <li><a href="#"><img class="addimg" src="images/ourfavorites/social-media/2.jpg" alt=""></a></li>
+   <li><a href="#"><img  class="addimg"src="images/ourfavorites/social-media/3.png" alt=""></a></li><li>
+    <a href="#"><img class="addimg" src="images/ourfavorites/social-media/4.png" alt=""></a></li>
+   <li><a href="#"><img class="addimg" src="images/ourfavorites/social-media/5.png" alt=""></a></li>
+</div>
+</footer>
+    <script>
+        // validation forms
+        function validation() {
+            var v1 = document.getElementById("name").value.trim();
+            var v2 = document.getElementById("email").value.trim();
+            var emailPattern = /^[a-zA-Z0_0-9]{4,30}@[a-zA-z]{2,12}.[A-Za-z.]{2,8}[a-zA-Z]{2,4}$/;
+            var pattern = /^[a-zA-z\s]{4,20}$/
+            if (!pattern.test(v1)) {
+
+
+                document.getElementById("name").style.border = "2px solid red";
+                return false;
+            } else {
+                if (!emailPattern.test(v2)) {
+                    document.getElementById("email").style.border = "2px solid red";
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
-
