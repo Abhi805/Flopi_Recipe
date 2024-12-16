@@ -16,7 +16,7 @@
             /* overflow-x: hidden;/ */
             /* overflow: hidden; */
             /* white-space: normal; */
-            overflow-x: hidden;
+
 
             /* max-width: 100%; */
             /* margin: 0 auto;  */
@@ -54,13 +54,27 @@
             color: green;
         }
 
+        #fr,
         .nav-links a {
             color: green;
-            margin: 0 10px;
+            margin: 0 14px;
             text-decoration: none;
             padding: 2px 6px;
             margin: 0 4px;
             border-radius: 3px;
+            font-family: ' Verdana';
+
+            font-weight: 500;
+        }
+
+        #fr {
+            border: none;
+            appearance: none;
+            font-family: ' Verdana';
+            font-weight: 500;
+            background: none;
+            font-size: clamp(20px, 2.3vw, 23px);
+
         }
 
         .icons {
@@ -77,6 +91,7 @@
             font-size: clamp(16px, 2vw, 32px);
         }
 
+        #fr:hover,
         .nav-links a:hover {
             background: rgba(0, 128, 0, 0.877);
             color: aliceblue;
@@ -87,6 +102,11 @@
             transform: scale(1.1);
             transition: transform 0.3s ease-in-out;
         }
+        /* .i2.active{
+            margin-left: 100px;
+            transition: 0.10s ease-in-out;
+   
+        } */
 
         i:hover {
             transform: rotate(88deg);
@@ -379,117 +399,162 @@
         #email {
             outline: none;
         }
- footer{
-   background: #424242;
-   margin: 0 16px;
-   color: white;
-   border-radius: 2px;
-height: 300px;
-margin-bottom: 20px;
-text-align: center;
-align-content: center;
+
+        footer {
+            background: #424242;
+            margin: 0 16px;
+            color: white;
+            border-radius: 2px;
+            height: 300px;
+            margin-bottom: 20px;
+            text-align: center;
+            align-content: center;
 
 
- }
- .logoand p{
-    font-size: clamp(26px, 4vw, 40px);
- }
- .logoand h3{
-    font-size: clamp(26px, 3vw, 40px);
-    font-weight: 400;
- }
- .nav-footer ul li a{
-  font-size: 19px;
-  
-  text-decoration: none;
-  list-style: none;
-  color: #fff;
-  font-weight: 700;
- }
- .nav-footer ul{
-    display: flex;
-  text-align:center;
-  justify-content: space-around;
+        }
 
- padding: 20px 0;
- }
+        .logoand p {
+            font-size: clamp(26px, 4vw, 40px);
+        }
 
- .nav-footer-2 ul {
-    display: flex;
-    column-gap: 193px;
-    padding-left:88px ;
-  
- }
- .nav-footer-2 ul li{
+        .logoand h3 {
+            font-size: clamp(26px, 3vw, 40px);
+            font-weight: 400;
+        }
 
- }
- .nav-footer-2 a{
+        .nav-footer ul li a {
+            font-size: 19px;
 
-font-size: 19px;
-  
-  text-decoration: none;
-  list-style: none;
-  color: #fff;
-  font-weight: 700;
- }
- .nav-footer ul {
- flex-wrap: wrap;
- 
- }
-.nav-footer ul li{
-   
-    border-bottom: 1px  solid #616161;
-    padding-bottom: 5px;
+            text-decoration: none;
+            list-style: none;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .nav-footer ul {
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+
+            padding: 20px 0;
+        }
+
+        .nav-footer-2 ul {
+            display: flex;
+            column-gap: 193px;
+            padding-left: 88px;
+
+        }
+
+        .nav-footer-2 ul li {}
+
+        .nav-footer-2 a {
+
+            font-size: 19px;
+
+            text-decoration: none;
+            list-style: none;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .nav-footer ul {
+            flex-wrap: wrap;
+
+        }
+
+        .nav-footer ul li {
+
+            border-bottom: 1px solid #616161;
+            padding-bottom: 5px;
+        }
+
+        .nav-footer-2 ul li {
+
+            border-bottom: 1px solid #616161;
+            padding-bottom: 5px;
+        }
+
+        .nav-footer ul li:hover,
+        .nav-footer-2 ul li:hover {
+            border-bottom: 1px solid white;
+        }
+
+        .social-media {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+
+            justify-content: center;
+
+        }
+
+        .social-media li {
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .social-media li img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            object-fit: cover;
+            /* इमेज को क्रॉप करके कंटेनर में फिट करेगा */
+            transition: border-radius 0.3s ease-out;
+        }
+
+        .social-media .addimg {}
+
+        .social-media li img:hover {
+            border-radius: 2px;
+            opacity: 0.9;
+        }
+
+
+
+        .nav-links a .gh {
+            color: green;
+            font-size: medium;
+        }
+
+        .nav-links a.ho:hover .gh {
+            color: white;
+        }
+
+        .social-media a.ho:hover {
+            transform: rotate(180deg);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Basic styling */
+        #fr .kl {
+            background-color: #ffffff;
+            color: #519D22;
+            font-size: large;
+
+        }
+
+  .searchbox{
+    display: none;
+  }
+  .searchbox.active{
+    display: inline;
 }
-.nav-footer-2 ul li{
-   
-   border-bottom: 1px  solid #616161;
-   padding-bottom: 5px;
-}
-.nav-footer ul li:hover, .nav-footer-2 ul li:hover{
-    border-bottom: 1px  solid white;
-}
-.social-media{
-    display: flex;
-    gap: 15px;
-  margin-top: 20px;
- 
-    justify-content: center;
-   
-}    
-.social-media li img{
-    width: 40px;
-    height: 40px;
-  border-radius: 50px;
-    object-fit: cover; /* इमेज को क्रॉप करके कंटेनर में फिट करेगा */
-    transition: border-radius 0.3s ease-out;
-}
-.social-media .addimg{
 
+
+/* Search box active state */
+.searchbox.active {
+    width: 180px; /* Target width */
+    opacity: 1; /* Make it visible */
+    padding: 5px; /* Add padding */
+    border: 1px solid #ccc; /* Add border */
+    transition: searchbox all 0.8s ease; /* Smooth transition */
+    border-radius: 4px;
+    border: 1px solid green;
+    outline: none;
+    color: green;
+    font-size: large;
 }
-.social-media li img:hover{
-    border-radius:2px;
-    opacity: 0.9;
-}
-/* last container */
-
-        /* छोटे स्क्रीन के लिए मीडिया क्वेरी */
-        /* @media (max-width: 460px) {
-    nav {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links a {
-        margin: 5px 0;
-    }
-} */
     </style>
 </head>
 
@@ -500,18 +565,35 @@ font-size: 19px;
         </div>
         <div class="nav-links">
             <a href="#home">Home</a>
-            <a href="#shop">Shop</a>
+            <select name="" id="fr">
+
+                <option class="kl" selected value="">Recipe-Index</option>
+
+                <option class="kl" value="">Food</option>
+
+                <option class="kl" value="">Breakfast</option>
+                <option class="kl" value="">Curries</option>
+                <option class="kl" value="">Cakes</option>
+                <option class="kl" value="">Lentils</option>
+                <option class="kl" value="">Paneer</option>
+                <option class="kl" value="">Snacks</option>
+            </select>
+
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
 
 
             <!-- <i class="fa-solid fa-user"></i>
             <i class="fas fa-shopping-cart fa-user"></i> -->
-            <i class="fa-solid fa-magnifying-glass  icons i2"></i>
+       
+        <input type="text" class="searchbox" placeholder="search">
+       
+            <i class="fa-solid fa-magnifying-glass searchicon icons i2"></i>
 
             <!-- <p>SIGN IN</p> -->
             <i Class="fa-solid fa-right-to-bracket icons i"></i>
         </div>
+
     </nav>
     <!-- section-1 -->
     <!-- container -->
@@ -737,13 +819,14 @@ font-size: 19px;
     <!-- container -->
     <div class="container">
         <h2 class="headind">Breakfast Recipes</h2>
-        <p class="heading-2">Find some popular Indian breakfast recipes that are both a comfort food and favored by many of us. </p>
+        <p class="heading-2">Find some popular Indian breakfast recipes that are both a comfort food and favored by many
+            of us. </p>
     </div>
 
     <!-- child-container-1 -->
     <div class="child-container-1 sec-3-child">
         <div class="child-card">
-            <img src="images/ourfavorites/section-2-img/1.jpg"  alt="">
+            <img src="images/ourfavorites/section-2-img/1.jpg" alt="">
             <p>Paneer Recipes</p>
             <h3>Paneer Dosa Recipe (Street Style)</h3>
         </div>
@@ -790,37 +873,39 @@ font-size: 19px;
         </div>
 
     </div>
-<footer>
-    <div class="logoand">
-        <p>Flopi</p>
-    <h3>Flopi Veg Recipes</h3>
-</div>
-<div class="nav-footer">
-    <ul>
-        <li><a href="#">Recipe Glossary</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Accessibility Statement</a></li>
-     
+    <footer>
+        <div class="logoand">
+            <p>Flopi</p>
+            <h3>Flopi Veg Recipes</h3>
+        </div>
+        <div class="nav-footer">
+            <ul>
+                <li><a href="#">Recipe Glossary</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Accessibility Statement</a></li>
 
-    </ul>
-</div>
-<div class="nav-footer-2">
-    <ul>
-   
-        <li><a href="#">Press &amp; Media</a></li>
-        <li><a href="#">Terms &amp; Conditions</a></li>
-     
 
-    </ul>
-</div>
-<div class="social-media">
-   <li><a href="#"><img  class="addimg" src="images/ourfavorites/social-media/Untitled.jpg" alt=""></a></li>
-   <li><a href="#"><img class="addimg" src="images/ourfavorites/social-media/2.jpg" alt=""></a></li>
-   <li><a href="#"><img  class="addimg"src="images/ourfavorites/social-media/3.png" alt=""></a></li><li>
-    <a href="#"><img class="addimg" src="images/ourfavorites/social-media/4.png" alt=""></a></li>
-   <li><a href="#"><img class="addimg" src="images/ourfavorites/social-media/5.png" alt=""></a></li>
-</div>
-</footer>
+            </ul>
+        </div>
+        <div class="nav-footer-2">
+            <ul>
+
+                <li><a href="#">Press &amp; Media</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+
+
+            </ul>
+        </div>
+        <div class="social-media">
+            <li><a href="#"><img class="addimg" src="images/ourfavorites/social-media/Untitled.jpg" alt=""></a></li>
+            <li><a href="#"><img class="addimg" src="images/ourfavorites/social-media/2.jpg" alt=""></a></li>
+            <li><a href="#"><img class="addimg" src="images/ourfavorites/social-media/3.png" alt=""></a></li>
+            <li>
+                <a href="#"><img class="addimg" src="images/ourfavorites/social-media/4.png" alt=""></a>
+            </li>
+            <li><a href="#"><img class="addimg" src="images/ourfavorites/social-media/5.png" alt=""></a></li>
+        </div>
+    </footer>
     <script>
         // validation forms
         function validation() {
@@ -842,7 +927,17 @@ font-size: 19px;
                 }
             }
         }
-    </script>
+   
+
+        // search box
+        var v1 = document.querySelector(".searchbox");
+        var v2 = document.querySelector(".searchicon");  
+
+        v2.addEventListener("click",function(){
+            v1.classList.toggle("active");
+            console.log("DGfg")
+        })
+        </script>
 </body>
 
 </html>
