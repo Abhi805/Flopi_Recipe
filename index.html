@@ -40,8 +40,9 @@
             /* margin: 15px 0; */
             border-bottom: 1px solid #dee7d7c9;
             position: relative;
-            height: 80px
-        }
+            min-height: 50px;
+            height:7vw;
+                }
 
         .logo {
             cursor: pointer;
@@ -555,7 +556,121 @@
     color: green;
     font-size: large;
 }
+.toggle-btn{
+    display: none;
+}
 
+
+@media  (max-width:790px) {
+    .toggle-btn{
+        display: flex;
+        background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 2%;
+    }
+    .nav-links{
+        display: none;
+    }
+   .nav-links.active{
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+   }
+   .i:hover{
+transform: none;
+   }
+   .searchbox.active{
+    width: 120px; /* Target width */
+    opacity: 1; /* Make it visible */
+    padding: 1px; /* Add padding */
+  
+   }
+   .i2:hover{
+    transform: none;
+   }
+}
+@media (max-width: 450px) {
+.child-card{
+    width: 48%;
+    margin-bottom: 18px;
+}
+.child-container-1{
+    margin-bottom: 0px;
+}
+.card img {
+            height: auto;
+            width: 100%;
+        }
+        
+        .card {
+
+min-width: 22.6%;
+
+}
+.card p{
+    font-size: 13px;
+}
+.nav-footer ul{
+    padding: 2px 0;
+    padding-left: 10px;
+    display: block;
+    text-align: start;
+}
+.nav-footer ul li{
+    border-bottom: none;
+    display: block;
+}
+.nav-footer  li{ 
+    padding: 8px 0;
+    list-style: none;
+}
+.nav-footer-2  li{ 
+padding: 8px 0;
+
+list-style: none;
+}
+.nav-footer-2 ul{
+    display:block;
+    column-gap: 0;
+    text-align: start;
+    padding-left: 10px;
+}
+.nav-footer-2 ul li:hover{
+ 
+    column-gap: 0;
+    border-bottom: none;
+} 
+.nav-footer-2 ul li{
+    border-bottom: none;
+}
+.nav-footer ul li:hover{
+ 
+ column-gap: 0;
+ border-bottom: none;
+} 
+.nav-footer ul li{
+ border-bottom: none;
+}
+
+
+.social-media{
+ margin-top: 8px;
+}
+.explor{
+    height: 224px;
+}
+.logo a{
+    font-size: 30px;
+}
+}
     </style>
 </head>
 
@@ -582,6 +697,7 @@
 
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
+           
 
 
             <!-- <i class="fa-solid fa-user"></i>
@@ -594,7 +710,7 @@
             <!-- <p>SIGN IN</p> -->
             <i Class="fa-solid fa-right-to-bracket icons i"></i>
         </div>
-
+        <button class="toggle-btn" aria-label="Toggle Menu">&#9776;</button>
     </nav>
     <!-- section-1 -->
     <!-- container -->
@@ -791,7 +907,7 @@
             </div>
             <div class="card">
                 <img src="images/ourfavorites/section-5/5.webp" alt="" class="bor">
-                <p class="text">South Ind. Recip.</p>
+                <p class="text">South Ind. Reci.</p>
             </div>
             <div class="card">
                 <img src="images/ourfavorites/section-5/7.webp" alt="" class="bor">
@@ -936,10 +1052,17 @@
 
         v2.addEventListener("click",function(){
             v1.classList.toggle("active");
-            console.log("DGfg")
-        })
+          
+        });
         // select option
+  
+        //toggle button
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const navLinks = document.querySelector('.nav-links');
 
+           toggleBtn.addEventListener('click',()=>{
+            navLinks.classList.toggle('active');
+           });
 
 
         </script>
